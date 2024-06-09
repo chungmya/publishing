@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+/* 'Noto Sans KR' */
+@font-face {
+    font-family: 'Noto Sans KR L';
+    src: url('NotoSansKR-Light-Alphabetic.woff2') format('woff2'),
+        url('NotoSansKR-Light-Alphabetic.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR B';
+    src: url('NotoSansKR-Bold-Alphabetic.woff2') format('woff2'),
+        url('NotoSansKR-Bold-Alphabetic.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Noto Sans KR R';
+    src: url('NotoSansKR-Regular-Alphabetic.woff2') format('woff2'),
+        url('NotoSansKR-Regular-Alphabetic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Noto Sans KR T';
+    src: url('NotoSansKR-Thin-Alphabetic.woff2') format('woff2'),
+        url('NotoSansKR-Thin-Alphabetic.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* Gotham */
+@font-face {
+    font-family: 'Gotham L';
+    src: url('GothamLight.woff2') format('woff2'),
+        url('GothamLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Black';
+    src: url('GothamBlack.woff2') format('woff2'),
+        url('GothamBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham B';
+    src: url('GothamBold.woff2') format('woff2'),
+        url('GothamBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham T';
+    src: url('GothamThin.woff2') format('woff2'),
+        url('GothamThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Barlow */
+@font-face {
+    font-family: 'Barlow B';
+    src: url('Barlow-Bold.woff2') format('woff2'),
+        url('Barlow-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow EL';
+    src: url('Barlow-ExtraLight.woff2') format('woff2'),
+        url('Barlow-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow R';
+    src: url('Barlow-Regular.woff2') format('woff2'),
+        url('Barlow-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow L';
+    src: url('Barlow-Light.woff2') format('woff2'),
+        url('Barlow-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+

@@ -1,0 +1,560 @@
+@charset "utf-8";
+
+/* 초기설정 */
+html {margin: 0; padding: 0; height: 100%;}
+body {font-family: 'Noto Sans KR', '맑은 고딕','helvetica','Apple SD Gothic Neo', sans-serif; word-break: keep-all; color: #000; margin: 0; line-height: 1.6;}
+ul, li {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color: inherit; display: block;}
+h2, h3, h4, h5 {font-family: 'Cafe24 Danjunghae';} 
+h3 {margin: 6% 0;}
+h4 {margin: 0; margin-bottom: 18%; }
+h1{margin: 0;}
+
+
+/*----------------mobile----------------*/
+/* header */
+header {/* position: fixed; top: 0; left: 0; z-index: 900; */ width: 100%; height: 7.5vh;} 
+header {display: flex; justify-content: space-between; align-items: center;background-color: #fff;}
+header h1 { width: 90px; background: url(images/logo-color.svg) no-repeat 50% 50%; background-size: cover; text-indent: -9999px; margin-left: 15px;}
+
+header .web {display: none; }
+header .toggle {margin-right: 20px;}
+header .toggle img { width: 30px;}
+
+/* #banner */
+#banner {height: 146vw; position: relative; text-align: center;}
+#banner {background-image: url(images/banner-mobile-txt.svg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;}
+
+/* #banner .bubble */
+#banner .bubble1 {width: 13%; position: absolute; top: 40%; left: 12%; transform: rotateZ(5deg);
+animation-name: bubble1; 
+animation-duration: 1.5s; animation-timing-function: ease-in;
+animation-iteration-count: infinite;
+}
+@keyframes bubble1 {
+    0% {
+        transform: translateY(0);
+   }
+    25% {
+        transform: translateY(5px);
+   }
+    50% {
+        transform: translateY(0);
+   }
+    75% {
+        transform: translateY(-5px);
+   }
+    100% {
+        transform: translateY(0px);
+   }
+}
+
+#banner .bubble2 {width: 13%; position: absolute; top: 40%; right: 12%; transform: rotateZ(-5deg); 
+animation-name: bubble2; 
+animation-duration: 1.5s; animation-timing-function: ease-in;
+animation-iteration-count: infinite;
+}
+@keyframes bubble2 {
+    0% {
+        transform: translateY(0);
+   }
+    25% {
+        transform: translateY(5px);
+   }
+    50% {
+        transform: translateY(0);
+   }
+    75% {
+        transform: translateY(-5px);
+   }
+    100% {
+        transform: translateY(0px);
+   }
+}
+
+
+/* #banner animation */
+@keyframes beerRotate-left {
+    0% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+/* #banner animation .left */
+#banner .banner-img .left {
+    position: absolute; bottom: 10%; left: 15%; 
+    animation-name: beerRotate-left; animation-duration: 1s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate ;
+    animation-timing-function: cubic-bezier(.74,.42,.39,.62);
+}
+
+@keyframes beerRotate-main {
+    0% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(2deg);
+    }
+}
+
+/* #banner animation .center */
+#banner .banner-img .center {
+    position: absolute; bottom: 10%; left: 35%; 
+    /* transform:translateY(-50%);  */
+    z-index: 200;
+    animation-name: beerRotate-main; animation-duration: 1s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate ;
+    animation-timing-function: cubic-bezier(.74,.42,.39,.62);
+}
+
+@keyframes beerRotate-right {
+    0% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+#banner .banner-img .right {
+    position: absolute; bottom: 12%; right:15%;
+    animation-name: beerRotate-right; animation-duration: 1s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate ;
+    animation-timing-function: cubic-bezier(.74,.42,.39,.62);
+}
+
+#banner .banner-img img {width: 30%;}
+
+
+/* #banner .slider */
+#banner .slider { display: flex; justify-content: center; position: absolute; bottom: 0; left: 50%; transform:translateX(-50%)}
+#banner .slider li a { width: 6px; height: 6px; border-radius: 100%; text-indent: -99999px; margin-left: 10px; background-color: #000;}
+#banner .slider li:first-child {margin-left: 0;}
+#banner .slider li.active {background-color: #ed1d24; border: #ed1d24 3px solid;}
+
+/*--- #contents ---*/
+.fade-up {opacity: 0;}
+/* --- #subtit ---*/
+#subtit {text-align: center; margin: 0 auto; margin-top: 15%;}
+#subtit > div {background: url(images/subtit-bg.png) no-repeat 50% 22%; background-size: contain;}
+#subtit div h3 {font-size: 1.8em;}
+#subtit div h3 span {color: #000054;}
+#subtit div p { font-size: 1.2em; padding: 0 12%; margin-top: 10%;}
+
+/* #subtit .sub-list */
+.plus {display: none;}
+#subtit > ul {margin-top: 20%; padding: 0 12%; display: flex;
+flex-wrap: wrap; justify-content: center;}
+#subtit ul .sub-list {margin-bottom: 20%;}
+#subtit ul .sub-list li {font-size: 1em;}
+#subtit ul .sub-list ul li strong {font-family: 'Cafe24 Danjunghae'; color: #000054;}
+#subtit ul .sub-list ul li:nth-child(2) {margin: 3% 0;}
+#subtit ul .sub-list .sub-list-img {margin-bottom: 5%;}
+#subtit ul .sub-list .sub-list-img img {width: 50%;}
+
+
+/*--- #beer ---*/
+/* 
+[컬러]
+1)강서 : #005ad5
+2)맥아더 : #d93c21
+3)한강 : #7752ca
+4)흥청망청 : f3cb1e / 폰트컬러 : #7a4b13
+*/
+
+/* #beer 공통 */
+#beer {margin-top: 38%;}
+#beer > div {margin-bottom: 100px;}
+#beer .beer-line img {width: 40vw;}
+#beer .beer-bg {height: 60vw;}
+#beer .beer-bg .beer-img {height: 65vw; text-indent: -9999px;}
+#beer .beer-txt {padding: 12% 7% 12% 12%;}
+#beer .beer-txt h4 {font-size: 3.1em; line-height: 1.1;}
+#beer .beer-txt h4 span {font-size: 0.5em; display: inline-block;}
+#beer .beer-txt p { font-size: 1.1em;}
+#beer .beer-txt p strong {font-weight: 600;}
+
+.wave { animation-name: wave; animation-duration: 2s; animation-timing-function: ease-in;
+animation-iteration-count: infinite;
+}
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+   }
+    25% {
+        transform: translateY(8px);
+   }
+    50% {
+        transform: translateY(0);
+   }
+    75% {
+        transform: translateY(-8px);
+   }
+    100% {
+        transform: translateY(0px);
+   }
+}
+
+/* #beer .beer01*/
+#beer .beer01 {position: relative;}
+#beer .beer01 .beer-line {position: absolute; right: 0; top: -50px;}
+#beer .beer01 .beer-bg {background: url(images/beer-bg-color1.png) no-repeat 50% 50%; background-size: cover;}
+#beer .beer01 .beer-bg .beer-img {background: url(images/beer-img1.png) no-repeat 50% 50%; background-size: cover;}
+#beer .beer01 .beer-txt h4 {color: #005ad5;}
+
+/* #beer .beer02*/
+#beer .beer02 {position: relative;}
+#beer .beer02 .beer-line {position: absolute; left: 0; top:-50px;}
+#beer .beer02 .beer-bg {background: url(images/beer-bg-color2.png) no-repeat 50% 50%; background-size: cover;}
+#beer .beer02 .beer-bg .beer-img {background: url(images/beer-img2.png) no-repeat 50% 50%; background-size: cover;}
+#beer .beer02 .beer-txt h4 {color: #d93c21;}
+
+/* #beer .beer03*/
+#beer .beer03 {position: relative;}
+#beer .beer03 .beer-line {position: absolute; right: 0; top: -40px;}
+#beer .beer03 .beer-bg {background: url(images/beer-bg-color3.png) no-repeat 50% 50%; background-size: cover;}
+#beer .beer03 .beer-bg .beer-img {background: url(images/beer-img3.png) no-repeat 0 50%; background-size: cover;}
+#beer .beer03 .beer-txt h4 {color:#7752ca;}
+
+/* #beer .beer04*/
+#beer .beer04 {position: relative;}
+#beer .beer04 .beer-line {position: absolute; left: 0; top:-40px;}
+#beer .beer04 .beer-bg {background: url(images/beer-bg-color4.png) no-repeat 50% 50%;background-size: cover;}
+#beer .beer04 .beer-bg .beer-img {background: url(images/beer-img4.png) no-repeat 50% 50%; background-size: cover;}
+#beer .beer04 .beer-txt h4 {color:#7a4b13; letter-spacing: -2px;}
+
+
+/* #ourstory */
+#ourstory {overflow: hidden; background-color: #f8f8f8; padding: 30% 0 15% 0;}
+#ourstory .story-txt h5 {font-size: 1.3em;}
+#ourstory .story-txt a {display: block; font-size: 0.9em; width: 95px; height: 35px; line-height: 35px; padding: 1%; text-align: center; color: #fff; font-weight: 500;}
+#ourstory .story-bg {height: 56vw; width: 56vw;}
+#ourstory .story-bg .story-img {height: 56vw; width: 50vw; text-indent: -9999px;} 
+
+/* #ourstory .story01 */
+#ourstory .story01 {position: relative; height: 78vw;}
+#ourstory .story01 .story-txt {position: absolute; left: 10%; z-index: 100;}
+#ourstory .story01 .story-txt a {background-color: #005ad5;}
+
+#ourstory .story01 .story-bg {position: absolute; top: 0; right: 0;}
+#ourstory .story01 .story-bg {background: url(images/story-bg1.png) no-repeat 50% 50%; background-size: cover;}
+#ourstory .story01 .story-bg .story-img {background: url(images/story-img1.png) no-repeat 50% 50%; background-size: 130%;}
+
+/* #ourstory .story02 */
+#ourstory .story02 {position: relative; height: 78vw;}
+#ourstory .story02 .story-txt {position: absolute; right: 10%; z-index: 100;}
+#ourstory .story02 .story-txt a {background-color: #7752ca;}
+
+#ourstory .story02 .story-bg {position: absolute; top: 0; left: 0;}
+#ourstory .story02 .story-bg {background: url(images/story-bg2.png) no-repeat 50% 50%; background-size: cover;}
+#ourstory .story02 .story-bg .story-img {background: url(images/story-img2.png) no-repeat 50% 50%; background-size: 130%; margin-left: 20px;}
+
+
+/* #ourstory .story03 */
+#ourstory .story03 {position: relative; height: 78vw;}
+#ourstory .story03 .story-txt {position: absolute; left: 10%; z-index: 100;}
+#ourstory .story03 .story-txt a {background-color: #f3cb1e; color:#7a4b13;}
+
+#ourstory .story03 .story-bg {position: absolute; top: 0; right: 0;}
+#ourstory .story03 .story-bg {background: url(images/story-bg3.png) no-repeat 50% 50%; background-size: cover;}
+#ourstory .story03 .story-bg .story-img {background: url(images/story-img3.png) no-repeat 50% 50%; background-size: 130%;}
+
+
+/*--- #raccoon ---*/
+#raccoon {text-align: center; margin-top: 20%;}
+#raccoon .raccoon-txt {margin-bottom: 12%;}
+#raccoon .raccoon-txt h5 {font-size: 1.5em; margin-bottom: 2%;}
+#raccoon .raccoon-txt p {font-size: 1.1em; padding: 0 12%;}
+#raccoon > div > ul {display: flex; flex-wrap: wrap; background-color: #34ac54; border-bottom: 1px solid #000;}
+#raccoon .weizen {border-top: 1px solid #000}
+#raccoon > div > ul li {width: 20%;}
+
+#raccoon > div > ul li img {width: 100%;}
+
+/* animation */
+#raccoon .bottle img {width: 280%;}
+@keyframes bottle {
+    0% {
+        transform: translateX(calc(0vw - 180px)) translateY(-50%) translateZ(0);
+    }
+    100% {
+        transform: translateX(calc(100vw + 180px)) translateY(-50%) translateZ(0);
+    }
+}
+
+/* .weizen  */
+#raccoon .weizen-list { height: 23vw;; overflow: hidden; position: relative; transition: opacity 200ms linear;}
+#raccoon .weizen-list li {position: absolute; top: 50%; animation-name: bottle; animation-duration: 20s; animation-iteration-count: infinite;animation-timing-function: linear; }
+
+#raccoon .weizen-list li:nth-child(1) {animation-delay: -5000ms; animation-direction: normal;}
+#raccoon .weizen-list li:nth-child(2) {animation-delay: -10000ms; animation-direction: normal;}
+#raccoon .weizen-list li:nth-child(3) {animation-delay: -15000ms; animation-direction: normal;}
+#raccoon .weizen-list li:nth-child(4) {animation-delay: -20000ms; animation-direction: normal;}
+#raccoon .weizen-list li:nth-child(5) {animation-delay: -25000ms; animation-direction: normal;}
+#raccoon .weizen-list li:nth-child(6) {animation-delay: -30000ms; animation-direction: normal;}
+
+/* .korean */
+#raccoon .korean-list { height: 23vw; overflow: hidden; position: relative; transition: opacity 200ms linear;}
+#raccoon .korean-list li {position: absolute; top: 50%; animation-name: bottle; animation-duration: 20s; animation-iteration-count: infinite;animation-timing-function: linear; }
+
+#raccoon .korean-list li:nth-child(1) {animation-delay: -5000ms; animation-direction: reverse;}
+#raccoon .korean-list li:nth-child(2) {animation-delay: -10000ms; animation-direction: reverse;}
+#raccoon .korean-list li:nth-child(3) {animation-delay: -15000ms; animation-direction: reverse;}
+#raccoon .korean-list li:nth-child(4) {animation-delay: -20000ms; animation-direction: reverse;}
+#raccoon .korean-list li:nth-child(5) {animation-delay: -25000ms; animation-direction: reverse;}
+
+
+/* ipa */
+#raccoon .ipa-list { height: 23vw; overflow: hidden; position: relative; transition: opacity 200ms linear;}
+#raccoon .ipa-list li {position: absolute; top: 50%; animation-name: bottle; animation-duration: 20s; animation-iteration-count: infinite;animation-timing-function: linear; }
+
+#raccoon .ipa-list li:nth-child(1) {animation-delay: -5000ms; animation-direction: normal;}
+#raccoon .ipa-list li:nth-child(2) {animation-delay: -10000ms; animation-direction: normal;}
+#raccoon .ipa-list li:nth-child(3) {animation-delay: -15000ms; animation-direction: normal;}
+#raccoon .ipa-list li:nth-child(4) {animation-delay: -20000ms; animation-direction: normal;}
+#raccoon .ipa-list li:nth-child(5) {animation-delay: -25000ms; animation-direction: normal;}
+
+/* footer */
+footer {margin-top: 10%;}
+footer div img {width: 50px;}
+footer p { font-size: 0.8em;}
+footer {background: #000; color: #fff; text-align: center; padding: 12%;}
+
+
+
+
+/*----------------tablet-----------------*/
+@media (min-width:1024px) {
+
+h3 {margin: 6% 0 3% 0;}
+
+
+/* header */
+header {height: 100px;} 
+header h1 {width: 120px; margin-left: 30px;}
+header .toggle {margin-right: 30px;}
+header .toggle img { width: 45px;}
+
+/* #banner */
+#banner {height: 47vw;}
+#banner {background-image: url(images/banner-tablet-txt.svg);}
+#banner .banner-img .left {position: absolute; bottom: 10%; left: 57%;}
+#banner .banner-img .center {position: absolute; bottom: 10%; left: 65%;}
+#banner .banner-img .right {position: absolute;  bottom: 13%; right: 14%;}
+#banner .banner-img img {width: 13%;}
+
+/* #banner .bubble */
+#banner .bubble1 {width: 8%; position: absolute; top: 10%; left: 60%;}
+#banner .bubble2 {width: 8%; position: absolute; top: 15%; right: 12%;}
+
+#subtit {text-align: center; margin: 0 auto; margin-top: 10%;}
+#subtit > div {background-image: url(images/subtit-bg-tablet.svg); background-position: 50% 65%; background-size: 65%;}
+#subtit div h3 {font-size: 3.2em;}
+#subtit div p {padding: 0 28%; margin-top: 0;}
+
+/* #subtit */
+#subtit > ul {margin-top: 6%; padding: 0; align-items: center; padding: 0 10%;}
+#subtit > ul > li {margin: 2%;}
+#subtit ul .sub-list ul li strong {font-size: 1.3em;}
+#subtit ul .sub-list .sub-list-img img {width: 200px;}
+/* #subtit > ul > li .last img {width: 80%;} */
+
+
+/* #beer */
+#beer {margin: 5% 0; position: relative;}
+#beer > div {margin-bottom: 0; display: flex; flex-wrap: nowrap;}
+
+#beer .beer02, #beer .beer04 {flex-direction: row-reverse;}
+
+#beer .beer-line img {width: 23vw;}
+#beer .beer-bg {height: 40vw; width: 50%;}
+#beer .beer-bg .beer-img {height: 30vh;}
+#beer .beer-txt {padding: 5%; width: 30%;}
+#beer .beer-txt p {font-size: 1em;}
+
+/* #beer .beer01*/
+#beer .beer01 {height: 43vw;}
+#beer .beer01 .beer-bg {background-size: contain;}
+#beer .beer01 .beer-bg .beer-img {background-attachment: fixed; background-size: 60%; background-position: 0% 15%; height: 43vw;}
+
+/* #beer .beer02 */
+#beer .beer02 {height: 43vw;}
+#beer .beer02 .beer-bg {background-size: contain;}
+#beer .beer02 .beer-bg .beer-img {background-attachment: fixed; background-size: 60%; background-position: 100% 15%; height: 43vw;}
+/* #beer .beer02
+#beer .beer02 {position: relative; height: 40vw; margin: 5% 0;padding-bottom: 6vw;}
+#beer .beer02 .beer-bg { background-size: 100%; position: absolute; top: 0; right: 0;}
+#beer .beer02 .beer-bg .beer-img {background-position: 40% 0%; background-size: 100%; margin-bottom: 20px;}
+#beer .beer02 .beer-bg .beer-img {background-attachment: fixed; background-size: 60%; background-position: 110% 88%;}
+#beer .beer02 .beer-txt {float: left; position: absolute; padding-top: 0;}
+*/
+
+/* #beer .beer03*/
+#beer .beer03 {height: 43vw;}
+#beer .beer03 .beer-bg {background-size: contain;}
+#beer .beer03 .beer-bg .beer-img {background-attachment: fixed; background-size: 60%; background-position: 0% 15%; height: 43vw;}
+
+/* #beer .beer04 */
+#beer .beer04 {height: 43vw;}
+#beer .beer04 .beer-bg {background-size: contain;}
+#beer .beer04 .beer-bg .beer-img {background-attachment: fixed; background-size: 60%; background-position: 100% 15%; height: 43vw;}
+/* #beer .beer04
+#beer .beer04 {position: relative; height: 40vw; padding-bottom: 10%;}
+#beer .beer04 .beer-bg {background-size: 100%; position: absolute; top: 0; right: 0;}
+#beer .beer04 .beer-bg .beer-img { background-size: 100%; margin-bottom: 20px;}
+#beer .beer04 .beer-bg .beer-img {background-attachment: fixed; background-size: 60%; background-position: 110% 88%;}
+#beer .beer04 .beer-txt {float: left; position: absolute;}
+*/
+
+/* #ourstory */
+#ourstory {margin-top: 12%; margin-bottom: 10%; padding: 15% 15% 8% 15%;}
+#ourstory .story-txt h5 {font-size: 2.3em;}
+
+#ourstory .story-bg {width: 35vw; height: 40vw; padding-right: 10%;}
+#ourstory .story-bg .story-img {width: 34vw;height: 39vw; text-indent: -9999px;} 
+#ourstory .story-bg {padding-left: 10%;}
+
+#ourstory .story01 {height: 50vw;}
+#ourstory .story02 {height: 50vw;}
+#ourstory .story03 {height: 50vw;}
+
+/* #raccoon */
+#raccoon {margin-top: 0;}
+#raccoon .raccoon-txt {margin-bottom: 8%;}
+#raccoon .raccoon-txt h5 {font-size: 2.3em;}
+#raccoon .raccoon-txt p {padding: 0 27%;}
+#raccoon .bottle img {width: 150%}
+
+#raccoon .weizen-list {height: 12vw;}
+#raccoon .korean-list {height: 12vw;}
+#raccoon .ipa-list {height: 12vw;}
+
+
+} /*---- /tablet  ----*/
+
+
+
+/*----------------web-----------------*/
+@media (min-width:1400px) {
+/* header */
+header {height: 124px; padding: 1% 0;} 
+header {background-color: #34ac54;}
+header h1 { width: 113px; background: url(images/logo-white.png) no-repeat 50% 50%; background-size: cover; text-indent: -9999px; margin-left: 145px;}
+header nav {padding-right: 10%;}
+header .web {display: flex; flex-wrap: nowrap; justify-content: space-around;  color: #fff; font-size: 1.5em; font-weight: bold; width: 500px;}
+header .toggle {display: none;}
+
+/* #banner */
+#banner {height: 47vw;}
+#banner {background-image: url(images/banner-web-txt.png);}
+
+#banner .banner-img .left {position: absolute; bottom: 5%; left: 55%;}
+#banner .banner-img .center {position: absolute; bottom: 5%; left: 64%;}
+#banner .banner-img .right {position: absolute;  bottom: 8%; right: 12%;}
+#banner .banner-img img {width: 15%;}
+
+/* bubble */
+#banner .bubble1 {width: 10%; position: absolute; top: 0%; left: 58%;}
+#banner .bubble2 {width: 10%; position: absolute; top: 8%; right: 8%;}
+ 
+/* #banner .slider */
+#banner .slider li {text-indent: -99999px;}
+#banner .slider li a { width: 12px; height: 12px;}
+
+
+/* #contents */
+/* #subtit */
+#subtit {text-align: center; margin: 0 auto; margin-top: 10%;}
+#subtit > div {background: url(images/subtit-bg.png) no-repeat 50% 0%; background-size: 70%;}
+#subtit div h3 {font-size: 4em; margin: 3% 0;}
+#subtit div p { font-size: 1.5em;}
+#subtit ul .sub-list li {font-size: 1.15em;}
+#subtit ul .sub-list li strong {font-size: 1.5em;}
+
+/* #subtit .sub-list */
+.plus {display: block;}
+#subtit > ul {margin-top: 3%; padding: 0 10%; display: flex; flex-flow: nowrap; justify-content: space-around; align-items: baseline;}
+#subtit > ul > li {margin: 0;}
+#subtit .sub-list {margin-bottom: 0;}
+#subtit .sub-list ul li strong {font-family: 'Cafe24 Danjunghae';}
+/* #subtit .sub-list ul li:nth-child(2) {margin: 0;} */
+#subtit ul .sub-list .sub-list-img img { width: auto;}
+#subtit .sub-list ul:first-child li {margin: 5% 0;}
+
+
+/* #beer 공통 */
+#beer > div {margin-bottom: 0; display: flex; flex-wrap: nowrap;}
+
+
+#beer .beer-bg {height: 40vw; width: 50%;}
+#beer .beer-bg .beer-img {height: 40vw; text-indent: -9999px;}
+
+#beer .beer-txt {padding: 5%; width: 30%;}
+#beer .beer-txt h4 {font-size: 5em; line-height: 1.1; width: 500px;}
+#beer .beer-txt h4 span {font-size: 0.5em; display: inline-block; width: 40vw;
+}
+#beer .beer-txt p { font-size: 1.15em;}
+
+/* #beer .beer01*/
+#beer .beer01 {padding-top: 5vw;}
+#beer .beer01 .beer-line {top: 10%;}
+#beer .beer01 .beer-bg {background-size: 100%;}
+#beer .beer01 .beer-bg .beer-img {background-size: 55%; margin-bottom: 20px;}
+
+/* #beer .beer02*/
+#beer .beer02 {position: relative; padding-top: 10vw;}
+#beer .beer02 .beer-line {top: 10%;}
+#beer .beer02 .beer-bg { background-size: 100%;}
+#beer .beer02 .beer-bg .beer-img {    background-size: 55%; margin-bottom: 20px;}
+
+/* #beer .beer03*/
+#beer .beer03 {padding-top: 10vw;}
+#beer .beer03 .beer-line {top: 10%;}
+#beer .beer03 .beer-bg {background-size: 100%;}
+#beer .beer03 .beer-bg .beer-img {background-size: 55%; margin-bottom: 20px;}
+
+/* #beer .beer04*/
+#beer .beer04 {position: relative; height: 40vw; padding-top: 10vw;}
+#beer .beer04 .beer-line {top: 10%;}
+#beer .beer04 .beer-bg {background-size: 100%;}
+#beer .beer04 .beer-bg .beer-img { background-size: 55%; margin-bottom: 20px;}
+
+/* #ourstory */
+#ourstory {margin-top: 15%; margin-bottom: 10%;}
+#ourstory .story-txt h5 {font-size: 3.7em;}
+#ourstory .story-txt a {display: block; font-size: 1.2em; width: 10vw; height: 3vw;
+line-height: 3vw; padding: 2%; text-align: center; color: #fff; font-weight: 500;}
+
+#ourstory .story-bg {width: 40vw; height: 46vw; padding-right: 10%;}
+#ourstory .story-bg .story-img {height: 41vw; width: 41vw; text-indent: -9999px;} 
+
+/* #ourstory .story01 */
+#ourstory .story01 {height: 52vw; margin-bottom: 5%;}
+#ourstory .story01 .story-bg .story-img {background-position: 50% 0;}
+
+/* #ourstory .story02 */
+#ourstory .story02 {height: 52vw; margin-bottom: 5%;}
+#ourstory .story02 .story-bg .story-img {background-position: 50% 0; padding-left: 0;     margin-left: 0;}
+
+/* #ourstory .story03 */
+#ourstory .story03 {height: 52vw; margin-bottom: 5%;}
+#ourstory .story03 .story-bg .story-img {background-position: 50% 0;}
+
+
+/* #raccoon */
+#raccoon .raccoon-txt {margin-bottom: 5%;}
+#raccoon .raccoon-txt h5 {font-size: 3.7em; margin-bottom: auto;}
+#raccoon .raccoon-txt p {font-size: 1.3em; margin: 3% auto;}
+
+
+/* footer */
+footer p { font-size: 1em;}
+
+}/*------------/web-------------*/
+

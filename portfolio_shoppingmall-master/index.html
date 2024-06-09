@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+   <title>index</title>
+
+   <!-- 평준화 스타일 시트 -->
+   <link rel="stylesheet" href="stylesheet/normalize.css">
+   <!-- 폰트 -->
+   <link rel="stylesheet" href="stylesheet/font.css">
+   <!-- 파비콘도 연결해야해 -->
+
+   <!-- css -->
+   <link rel="stylesheet" href="css/index.css">
+
+   <script src= "https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+   <script src= "https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
+    <!-- 스와이퍼 스크립트
+    <script src="stylesheet/swiper-bundle.min.js"></script> -->
+
+   <!-- 내가 작성 한 js -->
+   <script src="js/script.js"></script>
+
+   <script>
+   </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+             <h1><a href="index.html"><img src ="image/logo.png" alt="logo"></a></h1>
+             <nav class="web">
+                    <ul class="gnb one">
+                     <li><a href="#">명화별</a>
+                        <ul class="gnb_sub">
+                            <li><a href="listPage.html">Edition</a></li>
+                            <li><a href="listPage.html">artposter</a></li>
+                            <li><a href="listPage.html">장르별보기</a></li>
+                            </ul>
+                    </li>
+                     <li>
+                         <a href="listPage.html">작가별</a>
+                         <ul class="gnb_sub">
+                            <li><a href="listPage.html">Edition</a></li>
+                            <li><a href="listPage.html">artposter</a></li>
+                            <li><a href="listPage.html">장르별보기</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                         <a href="#">동양화</a>
+                         <ul class="gnb_sub">
+                            <li><a href="listPage.html">Edition</a></li>
+                            <li><a href="listPage.html">artposter</a></li>
+                            <li><a href="listPage.html">장르별보기</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                         <a href="listPage.html">사진</a>
+                    </li>
+                     <li>
+                         <a href="listPage.html">고급명화액자</a>
+                    </li>
+                     <li>
+                         <a href="listPage.html">특별전</a>
+                    </li>
+                 </ul>
+                 <ul class="web icon">
+                     <li><img src="image/icon-search.png" alt="search"></li>
+                     <li><img src="image/icon-user.png" alt="user"></li>
+                     <li><img src="image/icon-cart.png" alt="cart"></li>
+                 </ul>
+             </nav>
+             <nav class="mobile">
+                 <ul id="icon">
+                     <li><img src="image/icon-search.png" alt="search"></li>
+                     <li><img src="image/icon-cart.png" alt="cart"></li>
+                     <li class="menu_icon"><img src="image/icon-menu.png" alt="menu"></li>
+                 </ul>
+                 <ul id="hamburger">
+                     <!-- 모바일 햄버거 메뉴 -->
+                    <div class="close"><img src="image/button_x.png" alt="close"></div>
+                    <li><a href="#">명화별<span>+</span></a>
+                        <ul class="hambuger_sub">
+                            <li><a href="listPage.html">Edition</a></li>
+                            <li><a href="listPage.html">artposter</a></li>
+                            <li><a href="listPage.html">장르별보기</a></li>
+                            </ul>
+                    </li>
+                     <li>
+                         <a href="#">작가별<span>+</span></a>
+                         <ul class="hambuger_sub">
+                            <li><a href="listPage.html">Edition</a></li>
+                            <li><a href="listPage.html">artposter</a></li>
+                            <li><a href="listPage.html">장르별보기</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                         <a href="#">동양화<span>+</span></a>
+                         <ul class="hambuger_sub">
+                            <li><a href="listPage.html">Edition</a></li>
+                            <li><a href="listPage.html">artposter</a></li>
+                            <li><a href="listPage.html">장르별보기</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                         <a href="listPage.html">사진</a>
+                    </li>
+                     <li>
+                         <a href="listPage.html">고급명화액자</a>
+                    </li>
+                     <li>
+                         <a href="listPage.html">특별전</a>
+                    </li>
+                 </ul>
+             </nav>
+        </header>
+        <div id="banner">
+            <ul class="banner_img">
+                <li class="banner1">img 1</li>
+                <li class="banner2">img 2</li>
+                <li class="banner3">img 3</li>
+                <li class="banner4">img 4</li>
+            </ul>
+            <ul class="btn_list">
+                <li class="btn">banner1</li>
+                <li class="btn">banner2</li>
+                <li class="btn">banner3</li>
+                <li class="btn">banner4</li>
+            </ul>
+        </div><!-- /banner -->
+
+        <div class="slider_a">
+            <div class="a-text">
+                <p>그림이 주는<br><strong>감동을 전해드립니다.</strong></p>
+                <div class="more">more</div>
+            </div>
+        </div><!-- /slider_a -->
+
+        <div class="slider_b web">
+            <section class="slider_b section">
+                <ul>
+                    <li><h3>Curator<br>Recommendation</h3></li>
+                    <li><p>큐레이터의 추천 명화를 지금 만나보세요.</p></li>
+                    <li class="more">화살표</li>
+                </ul>
+            </section>
+            <section class=" slider_b web flex">
+                <div>
+                    <ul class="renoir">
+                        <li><h3>ARTIST : Renoir</h3></li>
+                        <li><p>프랑스 대표의 인상주의 화가 르누아르</p></li>
+                        <li class="more">화살표</li>
+                    </ul>
+                </div>
+                    <ul class="picasso">
+                        <li><h3>Picasso</h3></li>
+                        <li><p>미술활동을 한 20세기의<br> 대표적 큐비즘 작가 피카소</p></li>
+                        <li class="more">화살표</li>
+                    </ul>
+            </section>
+        </div><!-- /slider_b web -->
+
+        <div class="slider_b mobile wrapper">
+            <section class="slider_monaliza"> 
+                <ul>
+                    <li><h3>Curator<br>Recommendation</h3></li>
+                    <li>큐레이터의 추천 명화를 지금 만나보세요.</li>
+                    <li class="more">화살표</li>
+                </ul>
+            </section>
+            <section class="slider_renoir hidden">
+                <ul>
+                    <li><h3>ARTIST : Renoir</h3></li>
+                    <li>프랑스 대표의 인상주의 화가 르누아르</li>
+                    <li class="more">화살표</li>
+                </ul>
+            </section>
+            <section class="slider_picasso hidden">
+                <ul>
+                    <li><h3>Picasso</h3></li>
+                    <li>미술활동을 한 20세기의 대표적 큐비즘 작가 피카소</li>
+                    <li class="more">화살표</li>
+                </ul>
+            </section>
+        </div><!-- /slider_b mobile -->
+
+        <div id="product">
+            <p class="title">new arrivals</p>
+            <p class="titlesub">이 달의 신제품을 만나보세요!</p> 
+                <ul id="new">
+                    <li class="list one">
+                    <a href="produtPage.html">
+                        <div class="newimg">img01</div>
+                        <p class="name">vincent van gogh</p>
+                        <ul class="txt"> 
+                            <li><h3>Almond Blossom</h3></li>
+                            <li><p>아몬드꽃</p></li>
+                            <li><p>빈센트반고흐</p></li>
+                            <li class="price">29,000원</li>
+                        </ul>
+                    </a>
+                    </li> 
+
+                    <li class="list two">
+                    <a href="produtPage.html">
+                        <div class="newimg">img2</div>
+                        <p class="name">Claude Monet</p>
+                        <ul class="txt"> 
+                            <li><h3>Red Boats, Argenteuil</h3></li>
+                            <li><p>아르장퇴유의 붉은 요트들
+                                클로드 모네</p></li>
+                            <li><p>클로드 모네</p></li>
+                            <li class="price">29,000원</li>
+                        </ul>
+                    </a>
+                    </li>
+
+                    <li class="list three">
+                    <a href="produtPage.html">
+                        <div class="newimg">img3</div>
+                        <p class="name">Gustav Klimt</p>
+                        <ul class="txt"> 
+                            <li><h3>The Church in Cassone</h3></li>
+                            <li><p>카손 교회</p></li>
+                            <li><p>구스타프 클림트</p></li>
+                            <li class="price">29,000원</li>
+                        </ul>
+                    </a>
+                    </li>
+
+                    <li class="list four">
+                    <a href="produtPage.html">
+                        <div class="newimg">img4</div>
+                        <p class="name">Georges Pierre Seurat
+                        </p>
+                        <ul class="txt"> 
+                            <li><h3>A Sunday Afternoon<br>on the Island of La Grande Jatte</h3></li>
+                            <li><p>그랑드 자트 섬의 일요일 오후</p></li>
+                            <li><p>Georges Pierre Seurat</p></li>
+                            <li class="price">29,000원</li>
+                        </ul>
+                    </a>
+                    </li>
+
+                    <li class="list five">
+                    <a href="produtPage.html">
+                        <div class="newimg">img5</div>
+                        <p class="name">Pierre Auguste Renoir</p>
+                        <ul class="txt"> 
+                            <li><h3>Le Moulin de la Gallette</h3></li>
+                            <li><p>물랭 드 라 갈래트의 무도회</p></li>
+                            <li><p>피에르 오귀스트 르누와르</p></li>
+                            <li class="price">29,000원</li>
+                        </ul>
+                    </a>
+                    </li>
+
+                    <li class="list six">
+                    <a href="produtPage.html">
+                        <div class="newimg">img6</div>
+                        <p class="name">Gustave Caillebotte</p>
+                        <ul class="txt"> 
+                            <li><h3>Paris Street, Rainy Day
+                            </h3></li>
+                            <li><p>비오는 파리의 거리</p></li>
+                            <li><p>구스타브 카유보트 </p></li>
+                            <li class="price">29,000원</li>
+                        </ul>
+                    </a>
+                    </li>
+                </ul> <!-- #new-->
+
+            <p class="title">KOREAN PAINTING</p>
+            <p class="titlesub">여백의 미가 느껴지는 한국화의
+                단아함을 느껴보세요.</p> 
+                <ul id="korean">
+                    <li class="list2 01">
+                        <div class="koreanimg">
+                            <div class="img one">img</div>
+                        </div>
+                        <ul class="txt"> 
+                            <li><h3>초충도 수박과 들쥐 </h3></li>
+                            <li><p>신사임당</p></li>
+                            <li class="price">29,000원</li>
+                        </ul>
+                    </li>
+
+                    <li class="list2 02">
+                        <div class="koreanimg">
+                            <div class="img two">img</div>
+                        </div>
+                        <ul class="txt"> 
+                            <li><h3>단원풍속도첩 중 씨름</h3></li>
+                            <li><p>김홍도</p></li>
+                            <li class="price">29,000원</li>
+                        </ul>
+                    </li>
+
+                    <li class="list2 03">
+                        <div class="koreanimg">
+                            <div class="img three">img</div>
+                        </div>
+                        <ul class="txt"> 
+                            <li><h3>월하정인</h3></li>
+                            <li><p>신윤복</p></li>
+                            <li class="price">29,000원</li>
+                        </ul>
+                    </li>
+
+                    <li class="list2 04">
+                        <div class="koreanimg">
+                            <div class="img four">img</div>
+                        </div>
+                        <ul class="txt"> 
+                            <li><h3>흰소</h3></li>
+                            <li><p>이중섭</p></li>
+                            <li class="price">29,000원</li>
+                        </ul>
+                    </li>
+
+                    <li class="list2 05">
+                        <div class="koreanimg">
+                            <div class="img five">img</div>
+                        </div>
+                        <ul class="txt"> 
+                            <li><h3>봄나들이</h3></li>
+                            <li><p>김은호</p></li>
+                            <li class="price">29,000원</li>
+                        </ul>
+                    </li>
+
+                    <li class="list2 06">
+                        <div class="koreanimg">
+                            <div class="img six">img</div>
+                        </div>
+                        <ul class="txt"> 
+                            <li><h3>산</h3></li>
+                            <li><p>박노수</p></li>
+                            <li class="price">29,000원</li>
+                        </ul>
+                    </li>
+                </ul> <!-- #korean-->
+        </div> <!-- product -->
+    </div> <!-- /container -->
+    <footer>
+        <div class="web footer">
+            <div class="logo_web">logo</div>
+            <div class="infomation">
+                <ul>
+                    <li>박청미 Park Cheongmi | Web Publisher</li>
+                    <li>mobile. 010-4477-4158</li>
+                    <li>Email. bluepark1023@gmail.com</li>
+                    <li><a href="https://github.com/chungmya">github. github.com/chungmya</a></li>
+                </ul>
+                <ul>
+                    <li>쇼핑몰 반응형 웹 페이지 포트폴리오입니다.</li>
+                    <li>Total Time: 10일</li>
+                    <li>Role: 디자인 · 퍼블리싱 100%</li>
+                    <li>Type: 쇼핑몰 반응형 웹</li>
+                    <li>Used: HTML 5 / CSS3 / jQuery</li>
+                </ul>
+<!--
+                <ul>
+                    <li>CS상담센터: 경기도 수원시 팔달구 세지로 279-1 (지동) 8F</li>
+                    <li>개인정보관리책임자: 민경성(galleryart100@naver.com)</li>
+                    <li>Contact galleryart100@naver.com for more information.</li>
+                    <li>Copyright © 2010 갤러리아트 All rights reserved.</li>
+                </ul>  
+--> 
+            </div>
+        </div><!-- /web footer -->
+        <div class="mobile footer">
+            <div class="logo">logo</div>
+            <ul>
+                <li>박청미 | Web Publisher</li>
+                <li>mobile. 010-4477-4158</li>
+                <li>Email. bluepark1023@gmail.com</li>
+                <li><a href="https://github.com/chungmya">github. github.com/chungmya</a></li>
+            </ul>
+<!--
+           <div class="footertext">
+            박청미 ㅣ 대표자(성명): 민경성<br>
+            사업자 등록번호 안내: [4793900512]<br>
+            통신판매업 신고 2019-대구동구-0188 ㅣ 전화: 010-7160-3301<br>
+            CS상담센터: 경기도 수원시 팔달구 세지로 279-1 (지동) 8F <br>
+            개인정보관리책임자: 민경성(galleryart100@naver.com)<br>
+            Contact galleryart100@naver.com for more information.
+           </div>
+-->
+           <div class="footertext2">
+            Copyright © 2010 갤러리아트 All rights reserved.
+           </div>
+        </div><!-- /web footer -->
+    </footer>
+</body>
+</html>

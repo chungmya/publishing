@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+   <title>produtPage</title>
+
+     <!-- 평준화 스타일 시트 -->
+     <link rel="stylesheet" href="stylesheet/normalize.css">
+     <!-- 폰트 -->
+     <link rel="stylesheet" href="stylesheet/font.css">
+     <!-- 파비콘도 연결해야해 -->
+  
+     <!-- css -->
+     <link rel="stylesheet" href="css/productPage.css">
+
+     <script src= "https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+     <script src= "https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
+  
+     <!-- 내가 작성 한 js -->
+     <script src="js/script.js"></script>
+     <script src="js/script_productpage.js"></script>
+     
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="index.html"><img src ="image/logo.png" alt="logo"></a></h1>
+            <nav class="web">
+                   <ul class="gnb one">
+                    <li><a href="#">명화별</a>
+                       <ul class="gnb_sub">
+                           <li><a href="listpage/listPage.html">Edition</a></li>
+                           <li><a href="listpage/listPage.html">artposter</a></li>
+                           <li><a href="listpage/listPage.html">장르별보기</a></li>
+                           </ul>
+                   </li>
+                    <li>
+                        <a href="listpage/listPage.html">작가별</a>
+                        <ul class="gnb_sub">
+                           <li><a href="listpage/listPage.html">Edition</a></li>
+                           <li><a href="listpage/listPage.html">artposter</a></li>
+                           <li><a href="listpage/listPage.html">장르별보기</a></li>
+                       </ul>
+                   </li>
+                    <li>
+                        <a href="#">동양화</a>
+                        <ul class="gnb_sub">
+                           <li><a href="listpage/listPage.html">Edition</a></li>
+                           <li><a href="listpage/listPage.html">artposter</a></li>
+                           <li><a href="listpage/listPage.html">장르별보기</a></li>
+                       </ul>
+                   </li>
+                    <li>
+                        <a href="listpage/listPage.html">사진</a>
+                   </li>
+                    <li>
+                        <a href="listpage/listPage.html">고급명화액자</a>
+                   </li>
+                    <li>
+                        <a href="listpage/listPage.html">특별전</a>
+                   </li>
+                </ul>
+                <ul class="web icon">
+                    <li><img src="image/icon-search.png" alt="search"></li>
+                    <li><img src="image/icon-user.png" alt="user"></li>
+                    <li><img src="image/icon-cart.png" alt="cart"></li>
+                </ul>
+            </nav>
+            <nav class="mobile">
+                <ul id="icon">
+                    <li><img src="image/icon-search.png" alt="search"></li>
+                    <li><img src="image/icon-cart.png" alt="cart"></li>
+                    <li class="menu_icon"><img src="image/icon-menu.png" alt="menu"></li>
+                </ul>
+                <ul id="hamburger">
+                    <!-- 모바일 햄버거 메뉴 -->
+                   <div class="close"><img src="image/button_x.png" alt="close"></div>
+                   <li><a href="#">명화별<span>+</span></a>
+                       <ul class="hambuger_sub">
+                           <li><a href="listPage.html">Edition</a></li>
+                           <li><a href="listPage.html">artposter</a></li>
+                           <li><a href="listPage.html">장르별보기</a></li>
+                           </ul>
+                   </li>
+                    <li>
+                        <a href="#">작가별<span>+</span></a>
+                        <ul class="hambuger_sub">
+                           <li><a href="listPage.html">Edition</a></li>
+                           <li><a href="listPage.html">artposter</a></li>
+                           <li><a href="listPage.html">장르별보기</a></li>
+                       </ul>
+                   </li>
+                    <li>
+                        <a href="#">동양화<span>+</span></a>
+                        <ul class="hambuger_sub">
+                           <li><a href="listPage.html">Edition</a></li>
+                           <li><a href="listPage.html">artposter</a></li>
+                           <li><a href="listPage.html">장르별보기</a></li>
+                       </ul>
+                   </li>
+                    <li>
+                        <a href="listPage.html">사진</a>
+                   </li>
+                    <li>
+                        <a href="listPage.html">고급명화액자</a>
+                   </li>
+                    <li>
+                        <a href="listPage.html">특별전</a>
+                   </li>
+                </ul>
+            </nav>
+       </header>
+ 
+    <section class="summery">
+        <h6 class="direction mobile">작품별 > 토마스 맥나이트 > Palm Beach</h6>
+        <div id="produtimg">img</div>
+        <div id="producttxt">
+            <h6 class="summery web">작품별 > 토마스 맥나이트 > Palm Beach</h6>
+            <p class="code">[FRAM - h245]</p>
+            <p><strong>Palm Beach</strong> <span>29,000원</span></p>
+            <div class="subtext">
+                <ul>
+                    <li>액자(cm)</li>
+                    <li>그림(cm)</li>
+                    <li>제작방식</li>
+                </ul>
+                <ul class="info">
+                    <li>47.6 x 47.6</li>
+                    <li>46 x 46</li>
+                    <li>Offeset Printed on Art paper</li>
+                </ul>
+                <ul class="web">
+                    <li>수량</li>
+                    <li>1</li>
+                    <li><a href="#" alt="plus">+</a></li>
+                    <li><a href="#" alt="minus">-</a></li>
+                </ul>
+            </div> <!--.subtext-->
+            <section class="btn web">
+                <input type="submit" value="구매하기">
+                <div>
+                    <input type="submit" value="장바구니 담기">
+                    <input type="submit" value="찜하기">
+                </div>
+            </section><!--btn-->
+        </div><!--#producttxt-->
+    </sections><!--summery-->
+
+    <section id="detail">
+        <h2>토마스 맥나이트<br><strong>Plam Beach</strong></h2>
+        <div id="detail01">
+            <ul class="bg">
+                <li>img</li>
+            </ul>
+            <ul class="detailtxt">
+                <li><p>McKnight</p></li>
+                <li><h4>토마스 맥나이트</h4></li>
+                <li><p>개인적인 여행 경험을 바탕으로 창작 활동을 하는 미국 화가입니다.
+                맥나이트만의 탁월한 색상 조합과 직관적인 스타일의 화풍은 소박하면서도 사랑스러운 일상을 담아내고 있습니다. 그의 작품에는 인물들이 잘 등장하지 않지만, 그럼에도 불구하고 생동감 넘치는 이미지를 그려냅니다. 예술적 영감을 위해 평생동안 여행을 계속한 낭만적인 아티스트입니다.</p></li>
+            </ul>
+        </div> <!--detail01-->
+        <div id="detail02">img</div>
+        <div id="detail03">img</div>
+    </section> <!--#detail-->
+
+    <div class="more mobile">
+        <div class="down"><a href="#">인쇄 / 프레임 설명 닫기<img src="image/arrow_down.png" alt="down"></a></div>
+        <div class="up"><a href="#">인쇄 / 프레임 설명 보기<img src="image/arrow_up.png" alt="up"></a></div>
+    </div>
+
+    <section id="info">
+        <div class="print">
+            <p>HOW TO PRINT</p>
+            <h4>작품을 그대로 담은<br>
+                인쇄 방법</h4>
+            <ul>
+                <li><h5>오프셋 인쇄 ( Offset Printing )</h5></li>
+                <li>오프세 인쇄는 가장 많이 쓰는 인쇄 방식 중 하나로 인쇄판과 종이가 직접 접촉하지 않고 고무 블랭킷을 중간에 두어 인쇄하는 방식입니다.  매끄러운 고무 롤러에 잉크를 전달하기 때문에 거친 종이도 고무의 탄성으로 더 좋은 인쇄 품질을 얻을 수 있습니다.</li>
+            </ul>
+            <ul>
+                <li><h5>아트페이퍼 ( Art Paper )</h5></li>
+                <li>고급 단행본이나 미술서적 제작 또는 고급 포스터 인쇄에 사용되는 광택용지를 말합니다. 인쇄적성이 좋기 때문에 섬세한 인쇄가 가능하고 사진판인쇄, 달력, 미술인쇄 등에 폭 넓게 쓰입니다.</li>
+            </ul>
+        </div><!--print-->
+
+        <div class="frame">
+            <p>FRAME INFO.</p>
+            <h4>모던하고 베이직한<br>
+                프레임</h4>
+            <ul>
+                <li><h5>평액자(알루미늄 / Aluminum Frame)</h5></li>
+                <li>
+                    <ul class="flex">
+                        <li class="info01"></li>
+                        <li>얇은 두께의 8mm 알루미늄 프레임이 작품을 깔끔하고 모던하게 연출해줍니다. 액자 전면이 아크릴로 마감되어 내구성이 좋습니다.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li><h5>슬림패널 액자(Slim Frame)</h5></li>
+                <li>
+                    <ul class="flex">
+                        <li class="info02"></li>
+                        <li>0.3cm의 슬림한 두께의 패널형 프레임이 작품을 더욱 세련되고 입체감있게 연출해 줍니다. 그림에 자연스러운 재질감이 있는 코팅 가공 처리가 되어 깔끔하고 내구성이 좋습니다. 아크릴 없는 모던한 액자를 선호라는 분들에게 인기있는 액자입니다.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li><h5>평액자(원목 / Wood Frame)</h5></li>
+                <li>
+                    <ul class="flex">
+                        <li class="info03"></li>
+                        <li>2cm 두께의 원목 프레임이 모던하고 안정감 있는 분위기를 연출해줍니다. 
+                        액자 전면이 아크릴로 마감되어 내구성이 좋고, 캔버스 프린트 시 전면에 아크릴이 없습니다.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li><h5>틱액자(Antique Frame)</h5></li>
+                <li>
+                    <ul class="flex">
+                        <li class="info04"></li>
+                        <li>프레임에 섬세하게 새겨진 문양이 작품을 클래식하고 고급스럽게 만들어줍니다. 액자 전면이 아크릴로 마감되어 내구성이 좋고, 캔버스 프린트 시 전면에 아크릴이 없습니다</li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!--frame-->
+    </section> <!--#info-->
+
+    <section id="gallery2">
+        <p>작가의 <br><strong>다른 작품 더 보기</strong></p>
+        <ul class="gallery2">
+            <li class="list">
+                <ul class="one">
+                    <li class="title">Arizona</li>
+                    <li><p>토마스 맥나이트</p></li>
+                    <li><p class="price">29,000원</p></li>
+                   <li><p class="name">Thomas Mcknight</p></li> 
+                </ul>
+            </li>      
+            <li class="list">
+                <ul class="two">
+                    <li class="title">Arizona</li>
+                    <li><p>토마스 맥나이트</p></li>
+                    <li><p class="price">29,000원</p></li>
+                   <li><p class="name">Thomas Mcknight</p></li> 
+                </ul>
+            </li>      
+            <li class="list">
+                <ul class="three">
+                    <li class="title">Arizona</li>
+                    <li><p>토마스 맥나이트</p></li>
+                    <li><p class="price">29,000원</p></li>
+                   <li><p class="name">Thomas Mcknight</p></li> 
+                </ul>
+            </li>         
+        </ul>   
+    
+
+    </section>
+</div> <!--/.container-->
+
+<footer>
+    <div class="web footer">
+        <div class="logo_web">logo</div>
+        <div class="infomation">
+            <ul>
+                <li>박청미 Park Cheongmi</li>
+                <li>Web Publisher</li>
+                <li>mobile. 010-4477-4158</li>
+                <li>Email. bluepark1023@gmail.com</li>
+                <li><a href="https://github.com/chungmya">github. github.com/chungmya</a></li>
+            </ul>
+            <ul>
+                <li>쇼핑몰 반응형 웹 페이지 포트폴리오입니다.</li>
+                <li>Total Time: 10일</li>
+                <li>Role: 디자인 · 퍼블리싱 100%</li>
+                <li>Type: 쇼핑몰 반응형 웹</li>
+                <li>Used: HTML 5 / CSS3 / jQuery</li>
+            </ul>
+<!--
+            <ul>
+                <li>CS상담센터: 경기도 수원시 팔달구 세지로 279-1 (지동) 8F</li>
+                <li>개인정보관리책임자: 민경성(galleryart100@naver.com)</li>
+                <li>Contact galleryart100@naver.com for more information.</li>
+                <li>Copyright © 2010 갤러리아트 All rights reserved.</li>
+            </ul>  
+--> 
+        </div>
+    </div><!-- /web footer -->
+    <div class="mobile footer">
+        <div class="logo">logo</div>
+        <ul>
+            <li>박청미</li>
+            <li>Web Publisher</li>
+            <li>mobile. 010-4477-4158</li>
+            <li>Email. bluepark1023@gmail.com</li>
+            <li><a href="https://github.com/chungmya">github. github.com/chungmya</a></li>
+        </ul>
+<!--
+       <div class="footertext">
+        박청미 ㅣ 대표자(성명): 민경성<br>
+        사업자 등록번호 안내: [4793900512]<br>
+        통신판매업 신고 2019-대구동구-0188 ㅣ 전화: 010-7160-3301<br>
+        CS상담센터: 경기도 수원시 팔달구 세지로 279-1 (지동) 8F <br>
+        개인정보관리책임자: 민경성(galleryart100@naver.com)<br>
+        Contact galleryart100@naver.com for more information.
+       </div>
+-->
+       <div class="footertext2">
+        Copyright © 2010 갤러리아트 All rights reserved.
+       </div>
+    </div><!-- /web footer -->
+</footer> 
+
+    <div class="float mobile"><a href="listpage/listPage.html"><img src="image/back.png" alt="back"></a></div>
+
+    <section class="buy mobile">
+        <ul>
+            <li>결제 예정금액</li>
+            <li>29,000원</li>
+        </ul>
+        <div id="btn">
+            <div class="cart">
+                <img src ="image/icon_mobile_cart2.png" alt="cart">
+            </div>
+            <div class="wish">
+                <img src ="image/icon_mobile_wishlist.png" alt="wishlist">
+            </div>
+            <input type="submit" value="구매하기" id="buy">
+        </div>
+    </section><!-- .btn -->
+</body>
+</html>

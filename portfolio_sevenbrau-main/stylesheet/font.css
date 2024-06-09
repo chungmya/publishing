@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/* 'Noto Sans KR' */
+@font-face {
+    font-family: 'Noto Sans KR L';
+    src: url('font/NotoSansKR-Light-Alphabetic.woff2') format('woff2'),
+        url('font/NotoSansKR-Light-Alphabetic.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR B';
+    src: url('font/NotoSansKR-Bold-Alphabetic.woff2') format('woff2'),
+        url('font/NotoSansKR-Bold-Alphabetic.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Noto Sans KR R';
+    src: url('font/NotoSansKR-Regular-Alphabetic.woff2') format('woff2'),
+        url('font/NotoSansKR-Regular-Alphabetic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Noto Sans KR T';
+    src: url('font/NotoSansKR-Thin-Alphabetic.woff2') format('woff2'),
+        url('font/NotoSansKR-Thin-Alphabetic.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Cafe24 Danjunghae */
+@font-face {
+    font-family: 'Cafe24 Danjunghae';
+    src: url('font/Cafe24Danjunghae.woff2') format('woff2'),
+        url('font/Cafe24Danjunghae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+        
+@font-face {
+    font-family: 'Cafe24Dangdanghae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.2/Cafe24Dangdanghae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
